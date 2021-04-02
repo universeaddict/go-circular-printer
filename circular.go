@@ -34,28 +34,14 @@ func getTime(s string) int64 {
 		sum = sum + res
 		start = end
 	}
+	fmt.Println("Total", sum)
 	return sum
 }
 
 func main() {
 	reader := bufio.NewReaderSize(os.Stdin, 16*1024*1024)
-
-	os.Setenv("OUTPUT_PATH", "1")
-	stdout, err := os.Create(os.Getenv("OUTPUT_PATH"))
-	checkError(err)
-
-	defer stdout.Close()
-
-	writer := bufio.NewWriterSize(stdout, 16*1024*1024)
-
 	s := readLine(reader)
-
-	result := getTime(s)
-
-	fmt.Fprintf(writer, "%d\n", result)
-	fmt.Println("Total", result)
-
-	writer.Flush()
+	getTime(s)
 }
 
 func readLine(reader *bufio.Reader) string {

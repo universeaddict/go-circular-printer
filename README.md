@@ -1,6 +1,6 @@
 ## Circular Printer
 
-Ada sebuah lingkaran huruf dari A sampai Z. Pointer awal selalu dimulai dari A. Setiap perpindahan dari posisi awal ke huruf selanjutnya dihitung 1 detik dan pilih waktu terkecil, misal:
+Ada sebuah lingkaran huruf (Capital semua) dari A sampai Z. Pointer awal selalu dimulai dari A. Setiap perpindahan dari posisi awal ke huruf selanjutnya dihitung 1 detik dan pilih waktu terkecil, misal:
 - jika A ke B maka 1 detik
 - jika A ke C maka 2 detik
 - jika A ke Z maka 1 detik
